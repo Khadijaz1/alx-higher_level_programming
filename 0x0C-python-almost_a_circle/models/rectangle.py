@@ -124,8 +124,7 @@ class Rectangle(Base):
                 elif a == 4:
                     self.y = arg
                 a += 1
-
-elif kwargs and len(kwargs) != 0:
+elif(kwargs) and len(kwargs) != 0:
             for k, v in kwargs.items():
                 if k == "id":
                     if v is None:
