@@ -4,7 +4,7 @@ Script that fetches https://intranet.hbtn.io/status
 """
 import requests
 
-if name == 'main':
+if __name__ == "__main__":
     url = "https://intranet.hbtn.io/status"
     r = requests.get(url)
     text = r.text

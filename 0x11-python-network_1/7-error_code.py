@@ -6,7 +6,7 @@ Python Script that takes in a URL, sends a request to the URL
 import requests
 from sys import argv
 
-if name == 'main':
+if __name__ == "__main__":
     r = requests.get(argv[1])
     status = r.status_code
     print(r.text) if status < 400 else print(
